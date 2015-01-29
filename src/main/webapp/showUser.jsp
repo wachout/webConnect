@@ -6,5 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>${users.name }
+http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
 </body>
 </html>
