@@ -20,7 +20,7 @@ public class UsersController {
 	
 	@RequestMapping("/{userId}/showUser")
 	public String showUsers(@PathVariable String userId,HttpServletRequest request){
-		Users users = usersService.getUsersById(Integer.valueOf(userId));
+		mvc.model.Users users = usersService.getUsersById(Integer.valueOf(userId));
 		request.setAttribute("users", users);
 		return "showUser";
 	}

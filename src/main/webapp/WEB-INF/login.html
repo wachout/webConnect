@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="images/login.css" rel="stylesheet" type="text/css" />
+<script language=javascript src=javascript/jquery.min.js></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header"> </div>
+	    <div id="content-wrap"> <div class="space"> </div>
+	   	  <!-- <form action="index.html" method="post"> -->
+	   	  <form method="post">
+		   	  <div class="content">
+		        <div class="field"><label>账　户：</label><input id="userName" class="username" name="" type="text" /></div>
+				<div class="field"><label>密　码：</label><input id="passWord" class="password" name="" type="password" /><br /></div>
+		        <div class="field"><label>验证码：</label><input class="password" name="" type="password" /><br /></div>
+		        <div class="btn" ><button id="loginBtn" class="login-btn" /></div>
+		        <!-- <div class="login-btn" id="loginBtn">
+		        	<img src="/images/login-btn.gif"/>
+		        </div> -->
+		      </div>
+	      </form>
+	    </div>
+	    <div id="footer"> </div>
+	</div>
+
+<script language=javascript >
+		$(document).ready(function(){
+			/* $("#loginBtn").click(function(){
+				$.ajax({
+					   async: false,
+					   type: "GET",
+					   url: "CheckUserInfo.do",
+					   data: "userName="+$("#userName").val()+"&passWord="+$("#passWord").val(),
+					   success: function(msg){
+						   //alert(msg);
+						   document.location.href="index.html";
+					     //alert( "Data Saved: " + msg.checkResult );
+					  }
+				});  
+			}); */
+			$("#loginBtn").bind("click", ChechUserInfo);
+		});
+		
+		
+		 function ChechUserInfo(){
+			alert("sdd");
+			/* var callback = function(data){
+				alert(22);
+			} */
+			var param = {
+					"userName":$("#userName").val(),
+					"passWord":$("#passWord").val()
+			}; 
+			$.post("/CheckUserInfo.do", param, function(data){
+				alert(data);
+					//window.location.href="index.html";
+				});
+		 }
+</script>
+</body>
+</html>
