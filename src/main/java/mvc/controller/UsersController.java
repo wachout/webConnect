@@ -3,14 +3,13 @@ package mvc.controller;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import mvc.model.Users;
+import mvc.service.IUsersService;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import mvc.model.Users;
-import mvc.service.IUsersService;
 
 @Controller("userController")
 @RequestMapping("/users")
