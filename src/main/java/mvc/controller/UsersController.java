@@ -1,4 +1,4 @@
-package eagle.controller;
+package mvc.controller;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import eagle.model.Users;
-import eagle.service.IUsersService;
+import mvc.model.Users;
+import mvc.service.IUsersService;
 
 @Controller("userController")
 @RequestMapping("/users")

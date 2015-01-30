@@ -1,11 +1,11 @@
-package eagle.service.impl;
+package mvc.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import eagle.dao.UsersMapper;
-import eagle.model.Users;
-import eagle.service.IUsersService;
+import mvc.dao.UsersMapper;
+import mvc.model.Users;
+import mvc.service.IUsersService;
 
 @Service("usersService")
 public class UsersServiceImpl implements IUsersService {

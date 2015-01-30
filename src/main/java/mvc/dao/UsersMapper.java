@@ -1,6 +1,6 @@
-package eagle.dao;
+package mvc.dao;
 
-import eagle.model.Users;
+import mvc.model.Users;
 
 
 public interface UsersMapper {

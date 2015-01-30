@@ -1,4 +1,4 @@
-package eagle.model;
+package mvc.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import eagle.model.Users;
-import eagle.service.IUsersService;
+import mvc.model.Users;
+import mvc.service.IUsersService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring.xml","classpath:spring-mybatis.xml"})

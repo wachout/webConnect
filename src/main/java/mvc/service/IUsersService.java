@@ -1,6 +1,6 @@
-package eagle.service;
+package mvc.service;
 
-import eagle.model.Users;
+import mvc.model.Users;
 
 public interface IUsersService {
 
